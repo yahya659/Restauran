@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Piedra&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Piedra", serif; 
+    background-color: antiquewhite;
+}
+h2,h3{
+    color: black
+}
+p{
+    
+    color: darkgray;
+    font-size: 14px;
+}
+#menu{
+    padding: 3rem 0;
+    /* background-color: aqua; */
+}
+.contener{
+    max-width: 1000px;
+    /* background-color: blueviolet; */
+    margin: auto;
+}
+#menu .heding{
+    text-align: center;
+    
+}
+#menu .heding h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+    
+}
+#menu .menu-booton{
+    /* background-color: rgb(26, 142, 103); */
+    margin: 5px;
+    padding: 10px;
+}
+#menu .menu-booton .filter-btn{
+    width: 100px;
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    margin:10px 20px;
+    cursor: pointer;
+}
+#menu .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);/*عمودين 2 ...1 يعني شق الثاني عمود واحد لوتبعد الواحد عيجلسين جمب جمب*/
+    gap: 3rem;/*يفصل بين العمود والثاني*/
+}
+#menu .row .menu-item{
+    display: flex;
+    margin: 35px 0;
+
+}
+#menu .row .menu-item img{
+    object-fit: cover;/*يوضح الصور سواء*/
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    margin-right: 15px;   
+}
+#menu .row .menu-item .item-content h3{
+    font-size: 25px;
+    position: relative;/*خليناه الااب عشان الااسبان يكون ابسولت لانهن  كانين جنب جنب ضروري نفرقهن */
+}
+#menu .row .menu-item .item-content span{
+    font-size: 25px;
+    position:absolute;
+    left: 200px;
+}
+hr{
+    margin: 4px;
+    border: 2px solid black;
+}
+#menu .menu-booton .filter-btn:hover{
+   background-color: aquamarine;
+   color: black;
+}
+@media (max-width:900px){
+    h2,h3{
+    color: black
+}
+p{
+    
+    color: darkgray;
+    font-size: 14px;
+}
+#menu .menu-booton{
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 50px;
+
+}
+#menu .menu-booton .filter-btn{
+
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    /* padding: 5px; */
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    /* margin:10px 20px; */
+    cursor: pointer;
+    align-items: center;
+}
+#menu .row{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);/*عمودين 2 ...1 يعني شق الثاني عمود واحد لوتبعد الواحد عيجلسين جمب جمب*/
+    gap: 3rem;/*يفصل بين العمود والثاني*/
+}
+.contener{
+    padding-left: 150px;
+    /* max-width: 1000px; */
+    /* background-color: blueviolet; */
+    margin: auto;
+}
+}
