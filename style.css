@@ -6,7 +6,7 @@
 }
 body{
     font-family: "Piedra", serif; 
-    background-color: rgb(236, 196, 131);
+    background-color: antiquewhite;
 }
 h2,h3{
     color: black
@@ -27,7 +27,6 @@ p{
 }
 #menu .heding{
     text-align: center;
-    background-color:blanchedalmond;
     
 }
 #menu .heding h2{
